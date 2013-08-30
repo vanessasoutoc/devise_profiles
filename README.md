@@ -4,7 +4,7 @@ This is a sample Devise application that shows how the `User` and `Profile` mode
 
 ## Notable files
 
-These files are, in particular, more interesting to study for this app. 
+The vast majority of this project is a standard Rails app. These files are, in particular, more interesting to study for this app.
 
 ### Models
 
