@@ -4,6 +4,6 @@ This is a sample Devise application that shows how the User and Profile models c
 
 Notable files to look at:
 
-* User - app/models/user.rb
-* Profile - app/models/profile.rb
-* user_registration
+* User - [app/models/user.rb](https://github.com/farleyknight/devise_profiles/blob/master/app/models/user.rb)
+* Profile - [app/models/profile.rb](https://github.com/farleyknight/devise_profiles/blob/master/app/models/profile.rb)
+* user_registration - [app/views/devise/registrations/new.html.erb](https://github.com/farleyknight/devise_profiles/blob/master/app/views/devise/registrations/new.html.erb)
