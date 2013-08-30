@@ -2,7 +2,9 @@
 
 This is a sample Devise application that shows how the User and Profile models can be used together to keep a user's personal data separate from account data.
 
-Notable files to look at:
+## Notable files
+
+These files are, in particular, more interesting to study for this app. 
 
 * User - [app/models/user.rb](https://github.com/farleyknight/devise_profiles/blob/master/app/models/user.rb)
 * Profile - [app/models/profile.rb](https://github.com/farleyknight/devise_profiles/blob/master/app/models/profile.rb)
