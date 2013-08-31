@@ -1,44 +1,56 @@
 <div id="user_registration">
   <h1>Sign up</h1>
 
-  <%= form_for(@user, url: new_user_registration_path) do |f| %>
+  <%= form_for(@user, url: new_user_registration_path, html: {class: "form-horizontal"}) do |f| %>
     <%= devise_error_messages! %>
 
-    <div>
-      <%= f.label :email %><br/>
-      <%= f.text_field :email, :autofocus => true %>
+    <div class="control-group">
+      <%= f.label :email, class: "control-label" %>
+      <div class="controls">
+        <%= f.text_field :email, :autofocus => true %>
+      </div>
     </div>
 
-    <div>
-      <%= f.label :password %><br/>
-      <%= f.password_field :password %>
+    <div class="control-group">
+      <%= f.label :password, class: "control-label" %>
+      <div class="controls">
+        <%= f.password_field :password %>
+      </div>
     </div>
 
-    <div>
-      <%= f.label :password_confirmation %><br/>
-      <%= f.password_field :password_confirmation %>
+    <div class="control-group">
+      <%= f.label :password_confirmation, class: "control-label" %>
+      <div class="controls">
+        <%= f.password_field :password_confirmation %>
+      </div>
     </div>
 
     <%= f.fields_for :profile do |p| %>
       <h2>Profile</h2>
 
-      <div>
-        <%= p.label :first_name %><br/>
-        <%= p.text_field :first_name %>
+      <div class="control-group">
+        <%= p.label :first_name, class: "control-label" %>
+        <div class="controls">
+          <%= p.text_field :first_name %>
+        </div>
       </div>
 
-      <div>
-        <%= p.label :label_name %><br/>
-        <%= p.text_field :last_name %>
+      <div class="control-group">
+        <%= p.label :last_name, class: "control-label" %>
+        <div class="controls">
+          <%= p.text_field :last_name %>
+        </div>
       </div>
 
-      <div>
-        <%= p.label :location %><br/>
-        <%= p.text_field :location %>
+      <div class="control-group">
+        <%= p.label :location, class: "control-label" %>
+        <div class="controls">
+          <%= p.text_field :location %>
+        </div>
       </div>
     <% end %>
 
-    <p><%= f.submit "Sign up" %></p>
+    <p><%= f.submit "Sign up", class: "btn pull-right" %></p>
 
     <%= render partial: "devise/shared/links" %>
   <% end %>
